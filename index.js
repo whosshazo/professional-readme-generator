@@ -40,7 +40,27 @@ const questions = [
     {
         type: 'input',
         name: 'question',
-        message: 'Please provide your Email for future questions.'
+        message: 'Please provide your Email for future questions.',
+        validate:nameInput => {
+            if (nameInput) {
+                return true;
+            } else {
+                console.log('Please provide your Email!')
+            }
+        }
+    },
+    {
+        type: 'input',
+        name: 'github',
+        message: 'Please provide your GitHub account',
+        validate:nameInput => {
+            if (nameInput) {
+                return true;
+            } else {
+                console.log('Please provide your GitHub Account!')
+            }
+        }
+        
     }
 
     

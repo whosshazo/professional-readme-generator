@@ -12,16 +12,16 @@ function renderLicenseBadge(license) {
       badge = "![License](https://img.shields.io/badge/LICENSE-MIT-brightgreen)";
     break;
     case "GPL 3.0":
-      badge = "https://img.shields.io/badge/LICENSE-GPL%203.0-red";
+      badge = "![License](https://img.shields.io/badge/LICENSE-GPL%203.0-red)";
     break;
     case "Apache 2.0":
-      badge = "https://img.shields.io/badge/License-Apache%202.0-blue.svg"
+      badge = "![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)"
     break;
     case "BSD 3":
-      badge = "https://img.shields.io/badge/LICENSE-BSD%203-green";
+      badge = "![License](https://img.shields.io/badge/LICENSE-BSD%203-green)";
     break;
     case "LGPL 2.1":
-      badge = "https://img.shields.io/badge/LICENSE-LGPL%202.1-orange"
+      badge = "![License](https://img.shields.io/badge/LICENSE-LGPL%202.1-orange)"
     break;
     case "N/A":
       badge = "";
@@ -47,6 +47,8 @@ function generateMarkdown(data) {
   const badge = renderLicenseBadge(data.license)
 
   return `# 
+  ${badge}
+
   # Title:
     ${data.title}
 
@@ -82,7 +84,9 @@ Please make sure to update tests as appropriate.
   ${badge}
 
 ## Questions: 
-  Please direct any questions to <a href=mailto:${data.question}>Email:${data.question}</a>
+  Please direct any questions to <a href=mailto:${data.question}>Email: ${data.question}</a>
+
+  Please view my GitHub account for further documentation 
   
 
 
