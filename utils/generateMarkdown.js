@@ -62,6 +62,7 @@ function generateMarkdown(data) {
   3.[Tests](#tests)
   5.[Contribution](#contribution)
   6.[License](#license)
+  7.[Questions](#questions)
 
 ## Installation:
   ${data.installation}
@@ -86,7 +87,7 @@ Please make sure to update tests as appropriate.
 ## Questions: 
   Please direct any questions to <a href=mailto:${data.question}>Email: ${data.question}</a>
 
-  Please view my GitHub account for further documentation 
+  Please view my GitHub account for further documentation ${data.github}
   
 
 
